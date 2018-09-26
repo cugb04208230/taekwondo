@@ -1,0 +1,50 @@
+﻿@using Taekwondo.Data.Entities
+@{
+	Layout = null;
+	var menus = new List<Menu>
+	{
+		new Menu{Label = "首页",Url = "/mgr/index"},
+		new Menu{Label = "老师管理",Url = "/mgr/teacherindex",Children = new List<Menu>
+		{
+			new Menu{Label = "老师列表",Url = "/mgr/teachers"}
+		}},
+		new Menu{Label = "学员管理",Url = "/mgr/studentindex"}
+	};
+	var currentMenu = Context.Request.Path.ToString().Split("?")[0];
+}
+<div id="sidebar" class="sidebar responsive">
+	<ul class="nav nav-list" style="top: 0px;">
+
+		@foreach (var menu in menus)
+		{
+			<li class="left_menu_first">
+				<a href="@(menu.Url ?? "#")"  class="dropdown-toggle">
+					<i class="menu-icon fa fa-tachometer"></i>
+					<span class="menu-text">@menu.Label</span>
+				</a>
+				<b class="arrow"></b>
+				@if (menu.Children != null && menu.Children.Any())
+				{
+					<ul class="submenu">
+						
+						@foreach (var childMenu in menu.Children)
+						{
+							<li class="">
+								<a href="@childMenu.Url">
+									<i class="menu-icon fa fa-caret-right"></i>
+									@childMenu.Label
+								</a>
+								<b class="arrow"></b>
+							</li>
+						}
+					</ul>
+				}
+			</li>
+		}
+
+	</ul>
+	<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+		<i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+	</div>
+
+</div>

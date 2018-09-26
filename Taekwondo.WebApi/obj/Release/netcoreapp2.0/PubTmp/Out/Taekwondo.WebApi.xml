@@ -1,0 +1,817 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Taekwondo.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:Taekwondo.WebApi.Controllers.AccountController">
+            <inheritdoc />
+            <summary>
+            账号管理
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.AccountController.#ctor(Taekwondo.Service.TrainingOrganizationTeacherService,Taekwondo.Service.TrainingOrganizationClassService,Taekwondo.Service.GenearchChildService,Taekwondo.Service.AccountService)">
+            <summary>
+            ctor.
+            </summary>
+            <param name="teacherService"></param>
+            <param name="trainingOrganizationClassService"></param>
+            <param name="genearchChildService"></param>
+            <param name="accountService"></param>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.AccountController.Login(Taekwondo.Data.DTOs.Account.LoginRequest)">
+            <summary>
+            登录
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.AccountController.Register(Taekwondo.Data.DTOs.Account.RegisterRequest)">
+            <summary>
+            注册
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.AccountController.ResetPassword(Taekwondo.Data.DTOs.Account.ResetPasswordRequest)">
+            <summary>
+            找回密码
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.AccountController.UpdateHeadPic">
+            <summary>
+            更新头像
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Taekwondo.WebApi.Controllers.BaseController">
+            <inheritdoc />
+            <summary>
+            控制器基类
+            </summary>
+        </member>
+        <member name="P:Taekwondo.WebApi.Controllers.BaseController.UserAccountId">
+            <summary>
+            用户账号Id
+            </summary>
+        </member>
+        <member name="P:Taekwondo.WebApi.Controllers.BaseController.UserAccount">
+            <summary>
+            用户账号信息
+            </summary>
+        </member>
+        <member name="P:Taekwondo.WebApi.Controllers.BaseController.Ip">
+            <summary>
+            请求IP
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.BaseController.Validate(System.Object)">
+            <summary>
+            数据格式验证
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.BaseController.SaveFiles">
+            <summary>
+            保存文件列表
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.BaseController.SaveFiles(System.String)">
+            <summary>
+            保存文件列表
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.BaseController.GetFilePackagePath(System.String)">
+            <summary>
+            获取绝对路径
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.BaseController.GetHeadPic(System.Int64)">
+            <summary>
+            获取头像
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.BaseController.SaveHeadPic(System.Int64)">
+            <summary>
+            保存头像信息
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.BaseController.GetFileNetPath(System.String)">
+            <summary>
+            获取网络路径
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.BaseController.GetImageNetPath(System.String)">
+            <summary>
+            获取网络路径
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.BaseController.PageRender``1(Common.Data.QueryResult{``0})">
+            <summary>
+            分页
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="result"></param>
+        </member>
+        <member name="T:Taekwondo.WebApi.Controllers.ClassController">
+            <inheritdoc />
+            <summary>
+            班级管理，场馆管理使用
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.ClassController.#ctor(Taekwondo.Service.TrainingOrganizationClassService)">
+            <summary>
+            ctor.
+            </summary>
+            <param name="trainingOrganizationClassService"></param>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.ClassController.Query(Taekwondo.Data.DTOs.Class.TrainingOrganizationClassQueryRequest)">
+            <summary>
+            查询班级
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.ClassController.AdminQuery(Taekwondo.Data.DTOs.Class.TrainingOrganizationClassQueryRequest)">
+            <summary>
+            管理员查询班级
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.ClassController.GenearchQuery(Taekwondo.Data.DTOs.Class.TrainingOrganizationClassQueryRequest)">
+            <summary>
+            家长查询班级
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.ClassController.TeacherQuery(Taekwondo.Data.DTOs.Class.TrainingOrganizationClassQueryRequest)">
+            <summary>
+            教师查询班级
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.ClassController.Add(Taekwondo.Data.DTOs.Class.TrainingOrganizationClassAddRequest)">
+            <summary>
+            新增班级
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.ClassController.Update(Taekwondo.Data.DTOs.Class.TrainingOrganizationClassUpdateRequest)">
+            <summary>
+            修改班级
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.ClassController.Delete(System.Int64)">
+            <summary>
+            删除一个班级
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Taekwondo.WebApi.Controllers.Ent.EntLessonController">
+            <inheritdoc />
+            <summary>
+            课程
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.Ent.EntLessonController.#ctor(Taekwondo.Service.TrainingOrganizationClassLessonService)">
+            <summary>
+            ctor.
+            </summary>
+            <param name="lessonService"></param>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.Ent.EntLessonController.LessonAdd(Taekwondo.Data.DTOs.Lesson.LessonAddRequest)">
+            <summary>
+            新增班级课程
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.Ent.EntLessonController.LessonReserve(Taekwondo.Data.DTOs.Lesson.LessonReserveRequest)">
+            <summary>
+            学员课程预定
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.Ent.EntLessonController.LessonQuery(Taekwondo.Data.DTOs.Lesson.ClassLessonListRequest)">
+            <summary>
+            班级课程列表
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.Ent.EntLessonController.LessonDelete(Taekwondo.Data.DTOs.Lesson.ClassLessonDeleteRequest)">
+            <summary>
+            班级课程删除
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.Ent.EntLessonController.LessonUpdate(Taekwondo.Data.DTOs.Lesson.ClassLessonUpdateRequest)">
+            <summary>
+            班级课程更新
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Taekwondo.WebApi.Controllers.Ent.EntTeacherController">
+            <inheritdoc />
+            <summary>
+            课程
+            </summary>
+        </member>
+        <member name="T:Taekwondo.WebApi.Controllers.Ent.EntTrainController">
+            <inheritdoc />
+            <summary>
+            俱乐部管理
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.Ent.EntTrainController.#ctor(Taekwondo.Data.DataBaseContext)">
+            <summary>
+            ctor.
+            </summary>
+            <param name="dbContext"></param>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.Ent.EntTrainController.Trains(Taekwondo.Data.DTOs.TrainingOrganization.TrainQueryRequest)">
+            <summary>
+            获取俱乐部列表
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Taekwondo.WebApi.Controllers.ExcelController">
+            <inheritdoc />
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.ExcelController.#ctor(Taekwondo.Data.DataBaseContext)">
+            <summary>
+            ctor.
+            </summary>
+            <param name="dbContext"></param>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.ExcelController.Init">
+            <summary>
+            导出初始数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Taekwondo.WebApi.Controllers.FileController">
+            <inheritdoc />
+            <summary>
+            文件管理
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.FileController.Upload">
+            <summary>
+            上传文件返回系统文件标识
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.FileController.Mp4(System.String)">
+            <summary>
+            获取文件
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.FileController.Image(System.String)">
+            <summary>
+            获取文件
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.FileController.DbDescription">
+            <summary>
+            数据库模型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.FileController.ToSingular(System.String)">
+            <summary>
+            单词变成单数形式
+            </summary>
+            <param name="word"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.FileController.ToPlural(System.String)">
+            <summary>
+            单词变成复数形式
+            </summary>
+            <param name="word"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Taekwondo.WebApi.Controllers.GenearchController">
+            <inheritdoc />
+            <summary>
+            家长管理
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.GenearchController.#ctor(Taekwondo.Service.GenearchService)">
+            <summary>
+            ctor.
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.GenearchController.Query(Taekwondo.Data.DTOs.Genearch.GenearchQueryRequest)">
+            <summary>
+            获取家长列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.GenearchController.Add(Taekwondo.Data.DTOs.Genearch.GenearchAddRequest)">
+            <summary>
+            新增家长
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.GenearchController.Delete(System.Int64)">
+            <summary>
+            删除家长
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.GenearchController.Update(Taekwondo.Data.DTOs.Genearch.GenearchUpdateRequest)">
+            <summary>
+            修改家长
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Taekwondo.WebApi.Controllers.Genearch.StudentLessonController">
+            <inheritdoc />
+            <summary>
+            课程
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.Genearch.StudentLessonController.#ctor(Taekwondo.Service.TrainingOrganizationClassLessonService)">
+            <summary>
+            ctor.
+            </summary>
+            <param name="lessonService"></param>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.Genearch.StudentLessonController.LessonSign(Taekwondo.Data.DTOs.Lesson.StudentLessonSignRequest)">
+            <summary>
+            学员课程签到
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.Genearch.StudentLessonController.LessonLeave(Taekwondo.Data.DTOs.Lesson.StudentLessonLeaveRequest)">
+            <summary>
+            学员请假
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.Genearch.StudentLessonController.LessonMakeUp(Taekwondo.Data.DTOs.Lesson.StudentLessonMakeUpRequest)">
+            <summary>
+            学员补课申请
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.Genearch.StudentLessonController.LessonList(Taekwondo.Data.DTOs.Lesson.StudentLessonListRequest)">
+            <summary>
+            学员课程列表
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.Genearch.StudentLessonController.ReserveLessonList(Taekwondo.Data.DTOs.Lesson.StudentLessonReserveListRequest)">
+            <summary>
+            学员获取可补课列表
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Taekwondo.WebApi.Controllers.HomeworkController">
+            <inheritdoc />
+            <summary>
+            家庭作业
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.HomeworkController.#ctor(Taekwondo.Service.TrainingOrganizationTeacherService,Taekwondo.Service.TrainingOrganizationClassHomeworkAnswerService,Taekwondo.Service.TrainingOrganizationClassHomeworkService)">
+            <summary>
+            ctor.
+            </summary>
+            <param name="answerService"></param>
+            <param name="homeworkService"></param>
+            <param name="teacherService"></param>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.HomeworkController.Query(Taekwondo.Data.DTOs.Homework.HomeworkQueryRequest)">
+            <summary>
+            获取作业列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.HomeworkController.Answer(Taekwondo.Data.DTOs.Homework.AnswerRequest)">
+            <summary>
+            答题
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.HomeworkController.PublishHomework(Taekwondo.Data.DTOs.Homework.PublishHomeworkRequest)">
+            <summary>
+            发布家庭作业
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.HomeworkController.HomeworkDetail(Taekwondo.Data.DTOs.Homework.HomeworkDetailRequest)">
+            <summary>
+            作业详情以及答题情况查询
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.HomeworkController.Marking(Taekwondo.Data.DTOs.Homework.MarkingRequest)">
+            <summary>
+            作业批阅
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Taekwondo.WebApi.Controllers.NoticeController">
+            <inheritdoc />
+            <summary>
+            账号管理
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.NoticeController.#ctor(Taekwondo.Service.NoticeService)">
+            <summary>
+            ctor.
+            </summary>
+            <param name="noticeService"></param>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.NoticeController.Query(Taekwondo.Data.DTOs.Notice.NoticeQueryRequest)">
+            <summary>
+            获取通知
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.NoticeController.Read(System.Int64)">
+            <summary>
+            读取消息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.NoticeController.Count">
+            <summary>
+            获取未读消息数量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Taekwondo.WebApi.Controllers.SettingsController">
+            <inheritdoc />
+            <summary>
+            配置
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.SettingsController.#ctor(Taekwondo.Data.DataBaseContext)">
+            <summary>
+            配置
+            </summary>
+            <param name="dbContext"></param>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.SettingsController.UpdateSettings(System.String,System.String)">
+            <summary>
+            更新信息接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.SettingsController.UpdateInfo(Taekwondo.Data.DTOs.SystemSetting.UpdateInfoRequest)">
+            <summary>
+            更新信息接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.SettingsController.AppEdition(System.String,System.String)">
+            <summary>
+            版本替换
+            </summary>
+            <param name="os"></param>
+            <param name="edition"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.SettingsController.CompareAppEdition(System.String,System.String)">
+            <summary>
+            比较,本地版本和传递版本
+            </summary>
+            <param name="input">传递参数</param>
+            <param name="local">服务端最新版本</param>
+            <returns>
+            1.input 版本号大于local
+            2.input 版本号小于local
+            3.input 版本号等于local
+            </returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.SettingsController.InitStudentClass">
+            <summary>
+            InitStudentClass
+            </summary>
+            <param name="os"></param>
+            <param name="edition"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Taekwondo.WebApi.Controllers.AppEditionDto.Edition">
+            <summary>
+            版本号
+            </summary>
+        </member>
+        <member name="P:Taekwondo.WebApi.Controllers.AppEditionDto.Path">
+            <summary>
+            更新地址
+            </summary>
+        </member>
+        <member name="P:Taekwondo.WebApi.Controllers.AppEditionDto.Content">
+            <summary>
+            版本更新内容
+            </summary>
+        </member>
+        <member name="P:Taekwondo.WebApi.Controllers.AppEditionDto.IsUpdate">
+            <summary>
+            是否为新版本
+            </summary>
+        </member>
+        <member name="P:Taekwondo.WebApi.Controllers.AppEditionDto.IsMandatory">
+            <summary>
+            是否需要更新
+            </summary>
+        </member>
+        <member name="T:Taekwondo.WebApi.Controllers.SmsController">
+            <inheritdoc />
+            <summary>
+            账号管理
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.SmsController.#ctor(Taekwondo.Service.SmsService)">
+            <summary>
+            ctor.
+            </summary>
+            <param name="smsService"></param>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.SmsController.Post(Taekwondo.Data.DTOs.Sms.SmsRequest)">
+            <summary>
+            发送短信
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Taekwondo.WebApi.Controllers.StudentController">
+            <inheritdoc />
+            <summary>
+            学员管理
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.StudentController.#ctor(Taekwondo.Service.TrainingOrganizationClassStudentService,Taekwondo.Service.GenearchChildService,Taekwondo.Service.TrainingOrganizationClassLessonService)">
+            <summary>
+            ctor.
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.StudentController.Query(Taekwondo.Data.DTOs.Student.StudentQueryRequest)">
+            <summary>
+            获取学员列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.StudentController.QueryOne(Taekwondo.Data.DTOs.Student.StudentQueryOneRequest)">
+            <summary>
+            获取单个学员
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.StudentController.Add(Taekwondo.Data.DTOs.Student.StudentAddRequest)">
+            <summary>
+            新增学员
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.StudentController.Delete(System.Int64)">
+            <summary>
+            删除一个学员
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.StudentController.Update(Taekwondo.Data.DTOs.Student.StudentUpdateRequest)">
+            <summary>
+            修改一个学员
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Taekwondo.WebApi.Controllers.TeacherController">
+            <inheritdoc />
+            <summary>
+            教师管理(场馆管理后台使用)
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.TeacherController.#ctor(Taekwondo.Service.TrainingOrganizationTeacherService)">
+            <summary>
+            ctor.
+            </summary>
+            <param name="trainingOrganizationTeacherService"></param>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.TeacherController.Query(Taekwondo.Data.DTOs.Teacher.TeacherQueryRequest)">
+            <summary>
+            查询教师列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.TeacherController.Add(Taekwondo.Data.DTOs.Teacher.TeacherAddRequest)">
+            <summary>
+            新增教师
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.TeacherController.Update(Taekwondo.Data.DTOs.Teacher.TeacherUpdateRequest)">
+            <summary>
+            修改教师
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.TeacherController.Delete(Taekwondo.Data.DTOs.Teacher.TeacherDeleteRequest)">
+            <summary>
+            删除一个教师
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Taekwondo.WebApi.Controllers.Teacher.TeacherLessonController">
+            <inheritdoc />
+            <summary>
+            课程
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.Teacher.TeacherLessonController.#ctor(Taekwondo.Service.TrainingOrganizationClassLessonService)">
+            <summary>
+            ctor.
+            </summary>
+            <param name="lessonService"></param>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.Teacher.TeacherLessonController.LessonList(Taekwondo.Data.DTOs.Lesson.TeacherClassLessonListRequest)">
+            <summary>
+            获取课程列表
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.Teacher.TeacherLessonController.LessonSignList(Taekwondo.Data.DTOs.Lesson.TeacheClassLessonSignListRequest)">
+            <summary>
+            获取课程签到列表
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.Teacher.TeacherLessonController.ApprovalList(Taekwondo.Data.DTOs.Lesson.TeacherClassApprovalListRequest)">
+            <summary>
+            获取审批列表
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.Teacher.TeacherLessonController.Approval(Taekwondo.Data.DTOs.Lesson.TeacherClassApprovalRequest)">
+            <summary>
+            审批请求（请假/补课）
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.Teacher.TeacherLessonController.LessonSign(Taekwondo.Data.DTOs.Lesson.TeacherLessonSignRequest)">
+            <summary>
+            老师批量签到
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Taekwondo.WebApi.Controllers.Teacher.TeacherStudentController">
+            <inheritdoc />
+            <summary>
+            课程
+            </summary>
+        </member>
+        <member name="T:Taekwondo.WebApi.Controllers.TrainingOrganizationController">
+            <inheritdoc />
+            <summary>
+            管理员管理校区
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.TrainingOrganizationController.#ctor(Taekwondo.Service.TrainingOrganizationService)">
+            <summary>
+            ctor.
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.TrainingOrganizationController.Query(Taekwondo.Data.DTOs.TrainingOrganization.TrainingOrganizationQueryRequest)">
+            <summary>
+            查询名下校区
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.TrainingOrganizationController.Add(Taekwondo.Data.DTOs.TrainingOrganization.TrainingOrganizationAddRequest)">
+            <summary>
+            新增一个校区
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.TrainingOrganizationController.Update(Taekwondo.Data.DTOs.TrainingOrganization.TrainingOrganizationUpdateRequest)">
+            <summary>
+            编辑一个校区
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Taekwondo.WebApi.Controllers.TrainingOrganizationController.Delete(Taekwondo.Data.DTOs.TrainingOrganization.TrainingOrganizationDeleteRequest)">
+            <summary>
+            删除一个校区
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Taekwondo.WebApi.Filters.AuthAttribute">
+            <inheritdoc />
+            <summary>
+            授权验证
+            </summary>
+        </member>
+        <member name="P:Taekwondo.WebApi.Filters.AuthAttribute.UserType">
+            <summary>
+            用户类型
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Filters.AuthAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <inheritdoc />
+            <summary>
+            授权验证
+            </summary>
+            <param name="filterContext"></param>
+        </member>
+        <member name="T:Taekwondo.WebApi.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Taekwondo.WebApi.Program.BuildWebHost(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Taekwondo.WebApi.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:Taekwondo.WebApi.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Taekwondo.WebApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Taekwondo.WebApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment,Microsoft.Extensions.Logging.ILoggerFactory)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="loggerFactory"></param>
+        </member>
+    </members>
+</doc>

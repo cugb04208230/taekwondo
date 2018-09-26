@@ -1,0 +1,15 @@
+D:\DoWork\SVN\Taekwondo\API\Taekwondo.Service\bin\Release\netcoreapp2.0\Taekwondo.Service.deps.json
+D:\DoWork\SVN\Taekwondo\API\Taekwondo.Service\bin\Release\netcoreapp2.0\Taekwondo.Service.dll
+D:\DoWork\SVN\Taekwondo\API\Taekwondo.Service\bin\Release\netcoreapp2.0\Taekwondo.Service.pdb
+D:\DoWork\SVN\Taekwondo\API\Taekwondo.Service\bin\Release\netcoreapp2.0\Common.dll
+D:\DoWork\SVN\Taekwondo\API\Taekwondo.Service\bin\Release\netcoreapp2.0\Taekwondo.Data.dll
+D:\DoWork\SVN\Taekwondo\API\Taekwondo.Service\bin\Release\netcoreapp2.0\Common.pdb
+D:\DoWork\SVN\Taekwondo\API\Taekwondo.Service\bin\Release\netcoreapp2.0\Taekwondo.Data.pdb
+D:\DoWork\SVN\Taekwondo\API\Taekwondo.Service\obj\Release\netcoreapp2.0\Taekwondo.Service.csproj.CoreCompileInputs.cache
+D:\DoWork\SVN\Taekwondo\API\Taekwondo.Service\obj\Release\netcoreapp2.0\Taekwondo.Service.AssemblyInfoInputs.cache
+D:\DoWork\SVN\Taekwondo\API\Taekwondo.Service\obj\Release\netcoreapp2.0\Taekwondo.Service.AssemblyInfo.cs
+D:\DoWork\SVN\Taekwondo\API\Taekwondo.Service\obj\Release\netcoreapp2.0\Taekwondo.Service.dll
+D:\DoWork\SVN\Taekwondo\API\Taekwondo.Service\obj\Release\netcoreapp2.0\Taekwondo.Service.pdb
+D:\DoWork\SVN\Taekwondo\API\Taekwondo.Service\bin\Release\netcoreapp2.0\Taekwondo.Data.xml
+D:\DoWork\SVN\Taekwondo\API\Taekwondo.Service\obj\Release\netcoreapp2.0\Taekwondo.Service.csprojAssemblyReference.cache
+D:\DoWork\SVN\Taekwondo\API\Taekwondo.Service\obj\Release\netcoreapp2.0\Taekwondo.Service.csproj.CopyComplete

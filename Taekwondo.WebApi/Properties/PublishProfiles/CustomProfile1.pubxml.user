@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\sites\Taekwondo</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Aliyun.Net.SDK.Core.dll">
+      <publishTime>08/17/2017 21:59:50</publishTime>
+    </File>
+    <File Include="Aliyun.Net.SDK.Dysmsapi.dll">
+      <publishTime>08/17/2017 21:59:50</publishTime>
+    </File>
+    <File Include="appsettings.Development.json">
+      <publishTime>12/13/2017 19:48:21</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>04/23/2018 13:29:06</publishTime>
+    </File>
+    <File Include="Common.dll">
+      <publishTime>04/23/2018 11:01:29</publishTime>
+    </File>
+    <File Include="Common.pdb">
+      <publishTime>04/23/2018 11:01:29</publishTime>
+    </File>
+    <File Include="Dapper.dll">
+      <publishTime>07/08/2016 14:51:04</publishTime>
+    </File>
+    <File Include="dotnet-aspnet-codegenerator-design.dll">
+      <publishTime>07/25/2017 00:48:06</publishTime>
+    </File>
+    <File Include="es/Hangfire.Core.resources.dll">
+      <publishTime>09/19/2017 15:58:56</publishTime>
+    </File>
+    <File Include="Hangfire.AspNetCore.dll">
+      <publishTime>09/19/2017 15:59:02</publishTime>
+    </File>
+    <File Include="Hangfire.Core.dll">
+      <publishTime>09/19/2017 15:58:56</publishTime>
+    </File>
+    <File Include="Hangfire.SqlServer.dll">
+      <publishTime>09/19/2017 15:58:58</publishTime>
+    </File>
+    <File Include="Jiguang.JPush.dll">
+      <publishTime>03/08/2018 10:50:56</publishTime>
+    </File>
+    <File Include="log.config">
+      <publishTime>04/23/2018 13:29:23</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.CSharp.Workspaces.dll">
+      <publishTime>12/10/2017 11:28:02</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.Workspaces.dll">
+      <publishTime>12/10/2017 11:28:04</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Relational.Design.dll">
+      <publishTime>09/08/2017 22:02:30</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.SqlServer.Design.dll">
+      <publishTime>09/08/2017 22:02:30</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll">
+      <publishTime>07/25/2017 00:48:06</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Core.dll">
+      <publishTime>07/25/2017 00:48:06</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.dll">
+      <publishTime>07/25/2017 00:48:06</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll">
+      <publishTime>07/25/2017 00:48:06</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll">
+      <publishTime>07/25/2017 00:48:06</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll">
+      <publishTime>07/25/2017 00:48:06</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll">
+      <publishTime>07/25/2017 00:48:06</publishTime>
+    </File>
+    <File Include="Newtonsoft.Json.dll">
+      <publishTime>06/18/2017 13:57:10</publishTime>
+    </File>
+    <File Include="NLog.dll">
+      <publishTime>04/28/2017 18:28:04</publishTime>
+    </File>
+    <File Include="NLog.Extensions.Logging.dll">
+      <publishTime>05/13/2017 14:04:14</publishTime>
+    </File>
+    <File Include="NLog.Web.AspNetCore.dll">
+      <publishTime>06/16/2017 15:56:08</publishTime>
+    </File>
+    <File Include="NuGet.Frameworks.dll">
+      <publishTime>12/10/2017 11:28:16</publishTime>
+    </File>
+    <File Include="qcloudsms_csharp.dll">
+      <publishTime>12/25/2017 20:18:44</publishTime>
+    </File>
+    <File Include="runtimes/unix/lib/netstandard1.3/System.Threading.AccessControl.dll">
+      <publishTime>06/11/2016 23:14:56</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netstandard1.3/System.Threading.AccessControl.dll">
+      <publishTime>06/11/2016 23:14:56</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.dll">
+      <publishTime>04/20/2017 19:13:20</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.Swagger.dll">
+      <publishTime>04/20/2017 19:13:22</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.SwaggerGen.dll">
+      <publishTime>04/20/2017 19:13:22</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.SwaggerUI.dll">
+      <publishTime>04/20/2017 19:13:24</publishTime>
+    </File>
+    <File Include="System.Composition.AttributedModel.dll">
+      <publishTime>12/10/2017 11:28:02</publishTime>
+    </File>
+    <File Include="System.Composition.Convention.dll">
+      <publishTime>12/10/2017 11:28:02</publishTime>
+    </File>
+    <File Include="System.Composition.Hosting.dll">
+      <publishTime>12/10/2017 11:28:02</publishTime>
+    </File>
+    <File Include="System.Composition.Runtime.dll">
+      <publishTime>12/10/2017 11:28:02</publishTime>
+    </File>
+    <File Include="System.Composition.TypedParts.dll">
+      <publishTime>12/10/2017 11:28:02</publishTime>
+    </File>
+    <File Include="System.ServiceModel.dll">
+      <publishTime>06/13/2016 21:51:24</publishTime>
+    </File>
+    <File Include="Taekwondo.Data.dll">
+      <publishTime>05/16/2018 15:48:08</publishTime>
+    </File>
+    <File Include="Taekwondo.Data.pdb">
+      <publishTime>05/16/2018 15:48:08</publishTime>
+    </File>
+    <File Include="Taekwondo.Data.xml">
+      <publishTime>05/16/2018 15:48:07</publishTime>
+    </File>
+    <File Include="Taekwondo.Service.dll">
+      <publishTime>05/16/2018 15:48:10</publishTime>
+    </File>
+    <File Include="Taekwondo.Service.pdb">
+      <publishTime>05/16/2018 15:48:10</publishTime>
+    </File>
+    <File Include="Taekwondo.WebApi.deps.json">
+      <publishTime>05/16/2018 15:48:22</publishTime>
+    </File>
+    <File Include="Taekwondo.WebApi.dll">
+      <publishTime>05/16/2018 15:48:16</publishTime>
+    </File>
+    <File Include="Taekwondo.WebApi.pdb">
+      <publishTime>05/16/2018 15:48:16</publishTime>
+    </File>
+    <File Include="Taekwondo.WebApi.PrecompiledViews.dll">
+      <publishTime>05/16/2018 15:48:20</publishTime>
+    </File>
+    <File Include="Taekwondo.WebApi.PrecompiledViews.pdb">
+      <publishTime>05/16/2018 15:48:20</publishTime>
+    </File>
+    <File Include="Taekwondo.WebApi.runtimeconfig.json">
+      <publishTime>05/16/2018 15:48:22</publishTime>
+    </File>
+    <File Include="Taekwondo.WebApi.xml">
+      <publishTime>05/16/2018 15:48:13</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>05/16/2018 15:48:22</publishTime>
+    </File>
+    <File Include="wwwroot/css/ace-fonts.css">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/css/ace.min.css">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/css/bootstrap.min.css">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/css/font-awesome.min.css">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/css/jquery-ui.min.css">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/images/avatar.png">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/images/avatar2.png">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/images/avatar3.png">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/images/avatar4.png">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/images/avatar5.png">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/images/logo.png">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/images/user.jpg">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/js/ace-elements.min.js">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/js/ace-extra.min.js">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/js/ace.min.js">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/js/bootstrap.min.js">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/js/bottomSearchBar.js">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/js/c.js">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/js/fb.js">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/js/hm.js">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/js/jquery-ui.min.js">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/js/jquery.min.js">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/js/jquery.mobile.custom.min.js">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/js/jquery.ui.touch-punch.min.js">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/js/tongji.js">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/js/wh.js">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="wwwroot/js/youxia.js">
+      <publishTime>01/23/2018 15:30:28</publishTime>
+    </File>
+    <File Include="zh/Hangfire.Core.resources.dll">
+      <publishTime>09/19/2017 15:58:56</publishTime>
+    </File>
+    <File Include="ZKWeb.System.Drawing.dll">
+      <publishTime>08/28/2017 17:32:08</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

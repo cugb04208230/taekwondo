@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSG</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+	<meta content="" name="description"/>
+	<meta content="webthemez" name="author"/>
+	<title>小武</title>
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="/css/ace-fonts.css">
+	<link rel="stylesheet" href="/css/ace.min.css" id="main-ace-style">
+	<script src="/js/jquery.min.js"></script>
+	
+	@RenderSection("Css", false)
+</head>
+<body>
+<div id="wrapper">
+	@Html.Partial("~/Views/Shared/_Header.cshtml")
+	<div class="main-container" id="main-container">
+		@Html.Partial("~/Views/Shared/_Menu.cshtml")
+		@RenderBody()
+	</div>
+</div>
+@RenderSection("Scripts", false)
+</body>
+</html>
