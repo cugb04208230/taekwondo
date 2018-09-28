@@ -138,7 +138,8 @@ namespace Taekwondo.Data.Entities
 					GenearchId = map.GenearchId,
 					IdCardNo = genearchChild.IdCardNo,
 					LastModifiedAt = genearchChild.LastModifiedAt,
-					Dan = genearchChild.Dan
+					Dan = genearchChild.Dan,
+					LessionRemain = genearchChild.LessionRemain
 				};
 		}
 

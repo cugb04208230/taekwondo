@@ -8366,10 +8366,10 @@
       "path": "microsoft.netcore.platforms/2.0.0",
       "files": [
         "LICENSE.TXT",
-        "Microsoft.NETCore.Platforms.2.0.0.nupkg.sha512",
-        "Microsoft.NETCore.Platforms.nuspec",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
         "runtime.json",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -14585,11 +14585,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DoWork\\SVN\\Taekwondo\\API\\Taekwondo.WebApi\\Taekwondo.WebApi.csproj",
+      "projectUniqueName": "D:\\DoWork\\GitHub\\taekwondo\\Taekwondo.WebApi\\Taekwondo.WebApi.csproj",
       "projectName": "Taekwondo.WebApi",
-      "projectPath": "D:\\DoWork\\SVN\\Taekwondo\\API\\Taekwondo.WebApi\\Taekwondo.WebApi.csproj",
+      "projectPath": "D:\\DoWork\\GitHub\\taekwondo\\Taekwondo.WebApi\\Taekwondo.WebApi.csproj",
       "packagesPath": "C:\\Users\\DuoMi\\.nuget\\packages\\",
-      "outputPath": "D:\\DoWork\\SVN\\Taekwondo\\API\\Taekwondo.WebApi\\obj\\",
+      "outputPath": "D:\\DoWork\\GitHub\\taekwondo\\Taekwondo.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -14608,14 +14608,14 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\DoWork\\SVN\\Taekwondo\\API\\Common\\Common.csproj": {
-              "projectPath": "D:\\DoWork\\SVN\\Taekwondo\\API\\Common\\Common.csproj"
+            "D:\\DoWork\\GitHub\\taekwondo\\Common\\Common.csproj": {
+              "projectPath": "D:\\DoWork\\GitHub\\taekwondo\\Common\\Common.csproj"
             },
-            "D:\\DoWork\\SVN\\Taekwondo\\API\\Taekwondo.Data\\Taekwondo.Data.csproj": {
-              "projectPath": "D:\\DoWork\\SVN\\Taekwondo\\API\\Taekwondo.Data\\Taekwondo.Data.csproj"
+            "D:\\DoWork\\GitHub\\taekwondo\\Taekwondo.Data\\Taekwondo.Data.csproj": {
+              "projectPath": "D:\\DoWork\\GitHub\\taekwondo\\Taekwondo.Data\\Taekwondo.Data.csproj"
             },
-            "D:\\DoWork\\SVN\\Taekwondo\\API\\Taekwondo.Service\\Taekwondo.Service.csproj": {
-              "projectPath": "D:\\DoWork\\SVN\\Taekwondo\\API\\Taekwondo.Service\\Taekwondo.Service.csproj"
+            "D:\\DoWork\\GitHub\\taekwondo\\Taekwondo.Service\\Taekwondo.Service.csproj": {
+              "projectPath": "D:\\DoWork\\GitHub\\taekwondo\\Taekwondo.Service\\Taekwondo.Service.csproj"
             }
           }
         }

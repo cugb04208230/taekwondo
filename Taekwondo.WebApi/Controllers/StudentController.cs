@@ -39,7 +39,7 @@ namespace Taekwondo.WebApi.Controllers
 			var query = new GenearchChildQuery();
             if (request.ClassId != null)
                 query.ClassId = request.ClassId;
-
+			query.Name = request.Name;
             var user = UserAccount;
 		  
             query.PageIndex = request.PageIndex;

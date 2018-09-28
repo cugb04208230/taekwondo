@@ -14521,11 +14521,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DoWork\\SVN\\Taekwondo\\API\\Taekwondo.Data\\Taekwondo.Data.csproj",
+      "projectUniqueName": "D:\\DoWork\\GitHub\\taekwondo\\Taekwondo.Data\\Taekwondo.Data.csproj",
       "projectName": "Taekwondo.Data",
-      "projectPath": "D:\\DoWork\\SVN\\Taekwondo\\API\\Taekwondo.Data\\Taekwondo.Data.csproj",
+      "projectPath": "D:\\DoWork\\GitHub\\taekwondo\\Taekwondo.Data\\Taekwondo.Data.csproj",
       "packagesPath": "C:\\Users\\DuoMi\\.nuget\\packages\\",
-      "outputPath": "D:\\DoWork\\SVN\\Taekwondo\\API\\Taekwondo.Data\\obj\\",
+      "outputPath": "D:\\DoWork\\GitHub\\taekwondo\\Taekwondo.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -14544,8 +14544,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\DoWork\\SVN\\Taekwondo\\API\\Common\\Common.csproj": {
-              "projectPath": "D:\\DoWork\\SVN\\Taekwondo\\API\\Common\\Common.csproj"
+            "D:\\DoWork\\GitHub\\taekwondo\\Common\\Common.csproj": {
+              "projectPath": "D:\\DoWork\\GitHub\\taekwondo\\Common\\Common.csproj"
             }
           }
         }

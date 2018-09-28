@@ -13864,11 +13864,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DoWork\\SVN\\Taekwondo\\API\\Common\\Common.csproj",
+      "projectUniqueName": "D:\\DoWork\\GitHub\\taekwondo\\Common\\Common.csproj",
       "projectName": "Common",
-      "projectPath": "D:\\DoWork\\SVN\\Taekwondo\\API\\Common\\Common.csproj",
+      "projectPath": "D:\\DoWork\\GitHub\\taekwondo\\Common\\Common.csproj",
       "packagesPath": "C:\\Users\\DuoMi\\.nuget\\packages\\",
-      "outputPath": "D:\\DoWork\\SVN\\Taekwondo\\API\\Common\\obj\\",
+      "outputPath": "D:\\DoWork\\GitHub\\taekwondo\\Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

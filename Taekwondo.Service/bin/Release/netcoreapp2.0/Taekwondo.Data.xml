@@ -1611,6 +1611,11 @@
             当查询角色为教师或者场馆管理人员时选填
             </summary>
         </member>
+        <member name="P:Taekwondo.Data.DTOs.Student.StudentQueryRequest.Name">
+            <summary>
+            学员名称，模糊查询
+            </summary>
+        </member>
         <member name="T:Taekwondo.Data.DTOs.Student.StudentQueryOneResponse">
             <summary>
             学员查询结果

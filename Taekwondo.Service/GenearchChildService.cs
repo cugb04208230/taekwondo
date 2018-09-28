@@ -110,13 +110,15 @@ namespace Taekwondo.Service
 						clsName = cls.ClassName,
 						tName = t.TrainingOrganizationName
 				    };
-				foreach (var genearchChild in queryResult.List)
-				{
-					var item = queryable.FirstOrDefault(e => e.stuId == genearchChild.Id);
-					genearchChild.ClassName = item?.clsName;
-					genearchChild.TrainingOrganizationName = item?.tName;
+			    var list = queryResult.List.ToList();
+			    list.ForEach(genearchChild =>
+			    {
+				    var item = queryable.FirstOrDefault(e => e.stuId == genearchChild.Id);
+				    genearchChild.ClassName = item?.clsName;
+				    genearchChild.TrainingOrganizationName = item?.tName;
+			    });
+			    queryResult.List = list;
 
-				}
 		    }
 		    return queryResult;
 	    }

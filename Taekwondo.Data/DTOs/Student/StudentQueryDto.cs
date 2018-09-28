@@ -21,6 +21,12 @@ namespace Taekwondo.Data.DTOs.Student
 		[Description("班级,当查询角色为教师或者场馆管理人员时选填")]
 		public long? ClassId { get; set; }
 
+		/// <summary>
+		/// 学员名称，模糊查询
+		/// </summary>
+		[Description("学员名称，模糊查询")]
+		public string Name { set; get; }
+
 	 
 	}
 
