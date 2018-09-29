@@ -1,9 +1,0 @@
-D:\DoWork\SVN\Taekwondo\API\AopSdk\bin\Debug\netcoreapp2.0\AopSdk.deps.json
-D:\DoWork\SVN\Taekwondo\API\AopSdk\bin\Debug\netcoreapp2.0\AopSdk.dll
-D:\DoWork\SVN\Taekwondo\API\AopSdk\bin\Debug\netcoreapp2.0\AopSdk.pdb
-D:\DoWork\SVN\Taekwondo\API\AopSdk\obj\Debug\netcoreapp2.0\AopSdk.csprojResolveAssemblyReference.cache
-D:\DoWork\SVN\Taekwondo\API\AopSdk\obj\Debug\netcoreapp2.0\AopSdk.csproj.CoreCompileInputs.cache
-D:\DoWork\SVN\Taekwondo\API\AopSdk\obj\Debug\netcoreapp2.0\AopSdk.AssemblyInfoInputs.cache
-D:\DoWork\SVN\Taekwondo\API\AopSdk\obj\Debug\netcoreapp2.0\AopSdk.AssemblyInfo.cs
-D:\DoWork\SVN\Taekwondo\API\AopSdk\obj\Debug\netcoreapp2.0\AopSdk.dll
-D:\DoWork\SVN\Taekwondo\API\AopSdk\obj\Debug\netcoreapp2.0\AopSdk.pdb
