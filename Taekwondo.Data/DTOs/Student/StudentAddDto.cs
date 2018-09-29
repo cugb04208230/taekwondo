@@ -100,7 +100,17 @@ namespace Taekwondo.Data.DTOs.Student
 		/// 剩余课时
 		/// </summary>
         public long LessionRemain { set; get; }
-    }
+
+	    /// <summary>
+	    /// 场馆Id
+	    /// </summary>
+	    public long TrainingOrganizationId { set; get; }
+
+	    /// <summary>
+	    /// 班级Id
+	    /// </summary>
+	    public long ClassId { set; get; }
+	}
 
     /// <summary>
     /// 学员更新结果

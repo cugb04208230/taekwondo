@@ -1,0 +1,13 @@
+/.vs
+bin
+/Taekwondo.WebApi/obj
+/Taekwondo.Service/bin
+/Taekwondo.Service/obj
+/Taekwondo.Management/obj
+/Taekwondo.Management/bin
+/Taekwondo.Data/obj
+/Taekwondo.Data/bin
+/Common/obj
+/Common/bin
+/AopSdk/obj
+/AopSdk/bin

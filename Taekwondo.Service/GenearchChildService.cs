@@ -204,7 +204,14 @@ namespace Taekwondo.Service
 	            maps = maps.Where(e => !maps2.Select(e2 => e2.Id).Contains(e.Id));
 				DbContext.Set<GenearchChildMap>().RemoveRange(maps);
 	            DbContext.SaveChanges();
-				string[] mobiles = request.Mobile.Split(",");
+	            if (request.ClassId != 0 && request.TrainingOrganizationId != 0)
+				{
+					var mapCs = DbContext.Set<TrainingOrganizationClassStudent>().Where(e => e.GenearchChildId == genearchChild.Id);
+					DbContext.Set<TrainingOrganizationClassStudent>().RemoveRange(mapCs);
+					DbContext.SaveChanges();
+					_trainingOrganizationClassStudentService.AddClassStudent(trainingOrganizationManageUserId, request.TrainingOrganizationId, request.ClassId, genearchChild.Id);
+				}
+	            string[] mobiles = request.Mobile.Split(",");
 				string[] appellations = request.Appellation.Split(",");
 
 				for (int i = 0; i < mobiles.Length; i++)
